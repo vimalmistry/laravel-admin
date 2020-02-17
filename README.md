@@ -44,6 +44,7 @@ An admin panel for managing users, roles, permissions & crud.
 4. Run ```composer dump-autoload```
 
 5. Install the admin package.
+    - For laravel 6.0 Please generate scaffold manually 
     ```
     php artisan laravel-admin:install
     ```

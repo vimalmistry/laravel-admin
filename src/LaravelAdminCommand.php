@@ -47,8 +47,8 @@ class LaravelAdminCommand extends Command
             exit();
         }
 
-
-        if (\App::VERSION() >= '5.2' || \App::VERSION() < '6.0') {
+        // removed for laravel 6.0
+        if (\App::VERSION() >= '5.2' && \App::VERSION() < '6.0') {
             $this->info("Generating the authentication scaffolding");
             // php artisan ui bootstrap
             $this->call('make:auth');
