@@ -1,26 +1,33 @@
 {
-    "name": "appzcoder/laravel-admin",
-    "license": "MIT",
-    "description": "Laravel Admin Panel",
-    "keywords": [
-        "laravel",
-        "admin",
-        "laravel admin",
-        "laravel admin panel"
-    ],
-    "authors": [
-        {
-            "name": "Sohel Amin",
-            "email": "sohelamincse@gmail.com",
-            "homepage": "http://www.appzcoder.com"
-        }
-    ],
-    "require": {
-        "appzcoder/crud-generator": "^3.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "Appzcoder\\LaravelAdmin\\": "src/"
-        }
+  "name": "appzcoder/laravel-admin",
+  "license": "MIT",
+  "description": "Laravel Admin Panel",
+  "keywords": [
+    "laravel",
+    "admin",
+    "laravel admin",
+    "laravel admin panel"
+  ],
+  "authors": [
+    {
+      "name": "Sohel Amin",
+      "email": "sohelamincse@gmail.com",
+      "homepage": "http://www.appzcoder.com"
     }
+  ],
+  "require": {
+    "appzcoder/crud-generator": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Appzcoder\\LaravelAdmin\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Appzcoder\\LaravelAdmin\\LaravelAdminServiceProvider"
+      ]
+    }
+  }
 }
