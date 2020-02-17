@@ -7,6 +7,15 @@ An admin panel for managing users, roles, permissions & crud.
 
 ## Installation
 
+0. Add repo
+    ```php
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vimalmistry/laravel-admin"
+        }
+    ],
+    ```
 1. Run
     ```
     composer require appzcoder/laravel-admin:dev-master
