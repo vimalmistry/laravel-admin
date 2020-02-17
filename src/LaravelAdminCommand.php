@@ -49,7 +49,8 @@ class LaravelAdminCommand extends Command
 
         if (\App::VERSION() >= '5.2') {
             $this->info("Generating the authentication scaffolding");
-            $this->call('make:auth');
+            // php artisan ui bootstrap
+            $this->call('ui bootstrap');
         }
 
         $this->info("Publishing the assets");

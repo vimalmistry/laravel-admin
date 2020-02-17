@@ -29,5 +29,8 @@
         "Appzcoder\\LaravelAdmin\\LaravelAdminServiceProvider"
       ]
     }
+  },
+  "require-dev": {
+    "laravel/ui": "^1.2"
   }
 }

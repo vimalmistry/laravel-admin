@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Response;
 use Session;
 use View;
+use Illuminate\Support\Str;
 
 class ProcessController extends Controller
 {
@@ -81,7 +82,7 @@ class ProcessController extends Controller
             $menus = json_decode(File::get(base_path('resources/laravel-admin/menus.json')));
 
             $name = $commandArg['name'];
-            $routeName = ($commandArg['--route-group']) ? $commandArg['--route-group'] . '/' . snake_case($name, '-') : snake_case($name, '-');
+            $routeName = ($commandArg['--route-group']) ? $commandArg['--route-group'] . '/' . Str::snake($name, '-') : Str::snake($name, '-');
 
             $menus->menus = array_map(function ($menu) use ($name, $routeName) {
                 if ($menu->section == 'Modules') {
